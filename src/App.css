@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   background-color: #191919;
   color: #f4f4f4;
@@ -15,6 +16,9 @@ body {
   width: 100%;
   min-height: 100svh;
   padding: 100px 10%;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
 }
 
 .title {
@@ -22,3 +26,75 @@ body {
   text-align: center;
 }
 
+.login-form {
+  position: relative;
+  width: 450px;
+  min-height: 100px;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.092);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  z-index: 0;
+}
+/* 
+.login-form::before,
+.login-form::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 100vw;
+  z-index: -1;
+}
+
+.login-form::before {
+  background-color: #fca311;
+}
+
+.login-form::after {
+  width: 180px;
+  bottom: 0;
+  right: 0;
+  translate: 20% 20%;
+  background-color: #fca311;
+} */
+
+.text-red {
+  font-size: .9rem;
+  color: rgb(232, 0, 0);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .75rem 1rem;
+  outline: none;
+  color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: .5rem;
+}
+
+.form-control::placeholder {
+  color: #f1f1f1;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: .75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #191919;
+  background-color: #f4f4f4;
+  border-radius: .5rem;
+  cursor: pointer;
+}
